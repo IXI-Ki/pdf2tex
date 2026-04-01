@@ -23,18 +23,33 @@ If there are errors in the large model’s recognition results, please manually 
 
 # 中文介绍
 用大模型将pdf文档转换为tex文件，不保留pdf原本格式。
+
 直接运行pdf2tex_gui.py程序，就可以看到UI界面。
+
 步骤①：选择pdf文件；
+
 步骤②：再选择输出目录；
+
 步骤③：如果pdf是文字版，处理模式选render；如果pdf是扫描版，且每一页pdf中最大的图片是扫描照片，则选择extract；
+
 步骤④：输入起始页和结束页；
+
 步骤⑤：输入智谱glm-ocr的API KEY；（需要自行购买，或者你自己修改pdf2tex_gui.py代码，用你自己的视觉大模型。我觉得glm-ocr不错。）
+
 步骤⑥：点击一键全部执行（Step 1->4）
+
 等待完成！
+
 完成了之后点击“打开输出目录”，可以看到1个output.tex和4个文件夹：images、pdf_pages、raw_results、tex_pages。功能如下：
+
 images保存png图象。大模型版面识别后，标记了图象区域，这些区域被程序截取成为单独的png图片；
+
 pdf_pages保存pdf每一页的图片，如果pdf是扫描版，则此文件夹保存每一页pdf中最大的图片；
+
 raw_results保存每一页pdf经过大模型版面识别之后的原始json结果；
+
 tex_pages保存每一页pdf对应的tex代码。
+
 直接编译output.tex即可得到自己的新pdf！
+
 大模型识别结果有错误，请自己校对文字稿且修改文档格式。
