@@ -1,7 +1,7 @@
 # pdf2tex
 Convert PDF documents to tex files using LLM(glm-ocr) without preserving the original format of the PDF.
-By running the `pdf2tex_gui.py` program directly, you will see the UI interface. （后面有中文介绍）
-
+By running the `pdf2tex_gui.py` program directly, you will see the UI interface. 
+（后面有中文介绍）
 Step ①: Select a PDF file;
 Step ②: Choose an output directory;
 Step ③: If the PDF is text-based, select "render" as the processing mode. If the PDF is a scanned version and the largest image on each page is a scanned photo, choose "extract";
