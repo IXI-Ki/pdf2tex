@@ -1,16 +1,3 @@
-# pdf2tex_gui.py
-"""
-PDF → LaTeX 可视化转换工具 (优化版)
-整合 step1~step4，提供图形界面操作。
-
-优化要点:
-- 架构分层: 工具函数 / 步骤执行器 / GUI 三层分离
-- 线程安全: 支持任务取消
-- 安全性: 移除硬编码 API Key
-- 类型注解 + dataclass 配置
-- 日志分级 + 统一异常处理
-"""
-
 from __future__ import annotations
 
 import sys
